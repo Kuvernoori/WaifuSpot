@@ -1,4 +1,3 @@
-WaifuSpot
 WaifuSpot is an anime viewing and tracking website that provides users with information about various titles, characters, recommendations, and more. 
 
 Run instructions
