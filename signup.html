@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="sign_up_styles.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1 class="body">Sign Up</h1>
+    </header>
+
+    <main>
+        <form class="signup-form" novalidate>
+            <label for="name">Nickname</label>
+            <input type="text" id="name" name="name" required>
+            <span class="error-message" id="nameError"></span>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <span class="error-message" id="emailError"></span>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <span class="error-message" id="passwordError"></span>
+
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+            <span class="error-message" id="confirmPasswordError"></span>
+
+            <button type="submit">Sign Up</button>
+        </form>
+
+        <div class="google-signup" id="googleSignIn">
+            <button class="google-btn">
+                <img src="https://developers.google.com/identity/images/g-logo.png" alt="Google logo" class="google-logo">
+                Sign up with Google
+            </button>
+        </div>
+
+        <p class="login-link">Already have an account? <a href="signin.html">Log In</a></p>
+    </main>
+</div>
+
+<script src="sign_up.js"></script>
+</body>
+</html>
