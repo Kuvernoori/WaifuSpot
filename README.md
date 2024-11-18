@@ -5,8 +5,8 @@
 2.	Run the “index.html” file 
 
 🔧 Requirements
-Browser: A modern browser that supports HTML5, CSS3, and JavaScript.
-No additional dependencies: Everything is built to work out of the box!
+- Browser: A modern browser that supports HTML5, CSS3, and JavaScript.
+- No additional dependencies: Everything is built to work out of the box!
 
 🌟 WaifuSpot provides:
 -	Finding titles, characters by rating and popularity
