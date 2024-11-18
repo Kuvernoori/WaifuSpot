@@ -10,51 +10,53 @@
 </head>
 <body>
 
-<header>
-    <nav class="navbar navbar-expand-lg bg-body-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="withlogout.html">WaifuSpot</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav" id="menu">
-                    <li class="nav-item">
-                        <a id="menu-item-1" class="nav-link" href="tierlist.html" tabindex="0">Popularity list</a>
-                    </li>
-                    <li class="nav-item">
-                        <a id="menu-item-2" class="nav-link" href="manga.html" tabindex="0">Manga</a>
-                    </li>
-                    <li class="nav-item">
-                        <a id="menu-item-3" class="nav-link" href="forum.html" tabindex="0">Forum</a>
-                    </li>
-                    <li class="nav-item">
-                        <a id="menu-item-4" class="nav-link" href="news.html" tabindex="0">News</a>
-                    </li>
-                    <li class="nav-item">
-                        <a id="menu-item-5" class="nav-link" href="aboutus.html" tabindex="0">About us</a>
-                    </li>
-                </ul>
+    <header class="theme-sensitive">
+        <nav class="navbar navbar-expand-lg bg-body-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand theme-sensitive" href="withlogout.html">WaifuSpot</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav theme-sensitive" id="menu">
+                        <li class="nav-item theme-sensitive">
+                            <a id="menu-item-1" class="nav-link theme-sensitive" href="tierlist.html" tabindex="0">Popularity list</a>
+                        </li>
+                        <li class="nav-item theme-sensitive">
+                            <a id="menu-item-2" class="nav-link theme-sensitive" href="manga.html" tabindex="0">Manga</a>
+                        </li>
+                        <li class="nav-item theme-sensitive">
+                            <a id="menu-item-3" class="nav-link theme-sensitive" href="forum.html" tabindex="0">Forum</a>
+                        </li>
+                        <li class="nav-item theme-sensitive">
+                            <a id="menu-item-4" class="nav-link theme-sensitive" href="news.html" tabindex="0">News</a>
+                        </li>
+                        <li class="nav-item theme-sensitive">
+                            <a id="menu-item-5" class="nav-link theme-sensitive" href="aboutus.html" tabindex="0">About us</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
+        </nav>
+        <button class="btn btn-outline-light" id="toggleThemeButton">Theme switcher</button>
+        <div class="user-options">
+            <div id="auth-buttons">
+                <a href="signup.html" class="btn btn-outline-light" id="signUpButton">Sign Up</a>
+                <a href="signin.html" class="btn btn-outline-light" id="logInButton">Log In</a>
+                </div>
         </div>
-    </nav>
-    <button class="btn btn-outline-light" id="toggleThemeButton">Theme switcher</button>
-    <div class="user-options">
-        <div id="auth-buttons">
-            <a href="signup.html" class="btn btn-outline-light" id="signUpButton">Sign Up</a>
-            <a href="signin.html" class="btn btn-outline-light" id="logInButton">Log In</a>
+        <div id="personal-account-button" style="display: block;">
+            <a href="user.html" class="btn btn-outline-light" id="personalAccountButton">Personal Account</a>
+        </div>
+            <div id="logout-button" style="display: none;">
+                <a href="index.html" class="btn btn-outline-light" id="logOutButton">Log Out</a>
             </div>
-    </div>
-        <div id="logout-button" style="display: none;">
-            <a href="index.html" class="btn btn-outline-light" id="logOutButton">Log Out</a>
-        </div>
-    </div>
-        
-</header>
+           
+    </header>
 
-<div class="container">
-    <h1>Reborn as a Vending Machine, I Now Wander the Dungeon</h1>
+<div class="container theme-sensitive">
+    <h1 class="theme-sensitive">Reborn as a Vending Machine, I Now Wander the Dungeon</h1>
 
     <div class="content">
         <div class="left-column">
@@ -107,7 +109,7 @@
     </div>
 
     <div class="description">
-        <h2>What is "Reborn as a Vending Machine, I Now Wander the Dungeon"</h2>
+        <h2 class>What is "Reborn as a Vending Machine, I Now Wander the Dungeon"</h2>
         <p>A vending machine fanatic dies when he is ironically crushed by a vending machine. He finds himself
             reincarnated as a vending machine in another world.</p>
     </div>
@@ -117,27 +119,27 @@
         Your browser does not support the video tag.
     </video>
 
-    <div class="comments-section">
+    <div class="comments-section theme-sensitive">
         <h3>Comments</h3>
-        <div class="comment">
-            <p><strong>Anna:</strong> I really liked the concept! The idea of ​​being a vending machine in a dungeon
+        <div class="comment theme-sensitive">
+            <p><strong class="theme-sensitive">Anna:</strong> I really liked the concept! The idea of ​​being a vending machine in a dungeon
                 sounds crazy, but that's what makes the series so unique. I can't wait to see how the story unfolds!</p>
         </div>
-        <div class="comment">
-            <p><strong>John:</strong> The main character who became an automaton is very funny! His interactions with
+        <div class="comment theme-sensitive">
+            <p><strong class="theme-sensitive">John:</strong> The main character who became an automaton is very funny! His interactions with
                 the characters who buy goods from him are just hilarious. It adds a lot of humor to the story.</p>
         </div>
         <form class="comment-form mt-4">
             <div class="mb-3">
                 <label for="commentInput" class="form-label">Leave a comment:</label>
-                <textarea class="form-control" id="commentInput" rows="3" placeholder="Your comment..."></textarea>
+                <textarea class="form-control theme-sensitive" id="commentInput" rows="3" placeholder="Your comment..."></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>
 </div>
 
-<footer>
+<footer class="theme-sensitive">
     <p><i>Astana IT University || SE-2329</i></p>
     <p>Sanzhar Berkamalov | Arsen Tinalin | Altair Aitymov</p>
 </footer>

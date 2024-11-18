@@ -20,8 +20,9 @@ body {
 .navbar-brand:hover {
     color: #B0B7FF;
 }
+
 body.light-mode {
-    background-color: #fafdf7;
+    background-color: #FFF0F5;
     color: #1e1e1e;
 }
 
@@ -29,6 +30,7 @@ body.dark-mode {
     background-color: #121212;
     color: #ffffff;
 }
+
 .navbar-brand {
     color: #B0B7FF;
     font-size: 23px;
@@ -55,6 +57,26 @@ header a {
     margin: 0 15px;
 }
 
+header.theme-sensitive.light-mode {
+    background-color: #191230;
+}
+
+header a.theme-sensitive.light-mode {
+    color: #dbdfff;
+}
+
+.navbar-nav .nav-link.theme-sensitive.active.light-mode {
+    color: #9b9db3;
+}
+
+.nav-link.theme-sensitive.light-mode {
+    color: #dbdfff;
+}
+
+.nav-link.theme-sensitive.light-mode:hover {
+    color: #6e7085;
+}
+
 header .logo {
     font-size: 24px;
     font-weight: bold;
@@ -66,12 +88,14 @@ header .btn {
     font-weight: bold;
     color: #fff;
 }
+
 footer {
     text-align: left;
     padding: 10px;
     background-color: #000;
     color: #fff;
 }
+
 .main-content {
     padding: 20px;
 }
@@ -87,6 +111,10 @@ footer {
     border-radius: 8px;
 }
 
+.news-item.theme-sensitive.light-mode {
+    background-color: #2e2833;
+}
+
 .news-content {
     display: flex;
     flex-direction: row;
@@ -97,7 +125,7 @@ footer {
 
 .news-image {
     flex: 1;
-    max-width: 40%; 
+    max-width: 40%;
     border-radius: 8px;
 }
 
@@ -112,6 +140,23 @@ footer {
     font-size: 28px;
     margin-bottom: 10px;
     color: #fac550;
+}
+
+footer.theme-sensitive.light-mode {
+    background-color: #262629;
+}
+
+.btn {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background-color: #ffffff;
+}
+
+.news-item h3.theme-sensitive.light-mode {
+    color: #dbdfff;
 }
 
 .news-item p {
@@ -130,27 +175,58 @@ footer {
     text-decoration: underline;
 }
 
-.section-title{
+.section-title {
     font-size: 32px;
     margin-bottom: 20px;
 }
-.section-title.dark-mode{
+
+.section-title.dark-mode {
     color: #fac550;
 }
-.section-title.light-mode{
+
+.section-title.light-mode {
     color: black;
 }
+
 .nav-link:focus {
     outline: none;
     box-shadow: 0 0 0 3px rgb(0, 0, 0);
     color: #fac550;
 }
+
 #toggleThemeButton {
     font-size: 15px;
     font-weight: bold;
     color: #fff;
 }
+
 #toggleThemeButton:hover {
-    color: #000; 
-    background-color: #ffffff; 
+    color: #000;
+    background-color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    header .logo {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    header a {
+        margin: 5px 0;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .news-image {
+        display: none;
+    }
 }

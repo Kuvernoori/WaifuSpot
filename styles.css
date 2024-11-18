@@ -14,19 +14,29 @@ header {
     font-weight: bold;
 }
 
-header a{
+header.theme-sensitive.light-mode {
+    background-color: #191230;
+}
+
+header a {
     color: #B0B7FF;
     text-decoration: none;
     font-weight: bold;
     margin: 0 15px;
 }
+
+header a.theme-sensitive.light-mode {
+    color: #dbdfff;
+}
+
 header .logo {
     font-size: 24px;
     font-weight: bold;
     color: #B0B7FF;
 }
+
 body.light-mode {
-    background-color: #fafdf7;
+    background-color: #FFF0F5;
     color: #1e1e1e;
 }
 
@@ -34,13 +44,28 @@ body.dark-mode {
     background-color: #121212;
     color: #ffffff;
 }
+
 footer {
     text-align: left;
     padding: 10px;
     background-color: #000;
     color: #fff;
 }
-header .btn{
+
+footer.theme-sensitive.light-mode {
+    background-color: #262629;
+}
+
+.btn {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background-color: #ffffff;
+}
+
+header .btn {
     font-size: 15px;
     font-weight: bold;
     color: #FFF0F5;
@@ -50,13 +75,29 @@ header .btn{
     color: #fac550;
 }
 
+.navbar-nav .nav-link.theme-sensitive.active.light-mode {
+    color: #9b9db3;
+}
+
+.nav-link.theme-sensitive.light-mode {
+    color: #dbdfff;
+}
+
+.nav-link.theme-sensitive.light-mode:hover {
+    color: #6e7085;
+}
+
 .nav-link {
     color: #b0b7ff;
     font-weight: bold;
 }
 
-.navbar-nav .nav-link.active {
+.navbar-nav.nav-link.theme-sensitive.dark-mode.active {
     color: #fac550;
+}
+
+.navbar-nav.nav-link.theme-sensitive.dark-mode.active {
+    color: #9b9db3;
 }
 
 .navbar-brand:hover {
@@ -76,6 +117,7 @@ header .btn{
 .main-content {
     padding: 10px;
 }
+
 .spotlight {
     position: relative;
     height: 500px;
@@ -91,6 +133,18 @@ header .btn{
     margin-bottom: 100px;
     margin-left: 18px;
     color: #fac550;
+}
+
+h1.theme-sensitive.light-mode {
+    color: #dbdfff;
+}
+
+h2.theme-sensitive.light-mode {
+    font-weight: bold;
+}
+
+h2.theme-sensitive.dark-mode {
+    font-weight: bold;
 }
 
 .spotlight .actions {
@@ -115,7 +169,7 @@ header .btn{
     padding: 12px 24px;
     background-color: #FFF0F5;
     border: none;
-    color: #323029;
+    color: #1e1e1e;
     font-size: 24px;
     font-weight: bold;
     cursor: pointer;
@@ -149,7 +203,7 @@ header .btn{
 .spotlight-content {
     position: relative;
     padding: 20px;
-    color: #FFF0F5;
+    color: white;
     z-index: 1;
     font-size: 30px;
     bottom: 5px;
@@ -190,25 +244,21 @@ header .btn{
 .popular {
     margin-top: 40px;
 }
+
 .section-title {
     font-size: 32px;
     margin-bottom: 20px;
     font-weight: bold;
 }
-.section-title.light-mode {
-    color: black;
-}
 
-.section-title.dark-mode {
-    color: white;
-}
 
-.anime-grid {
+.anime-grid.theme-sensitive {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
 }
-.anime-grid .anime-item {
+
+.anime-grid.theme-sensitive .anime-item {
     flex: 1 1 calc(25% - 15px);
     box-sizing: border-box;
     background-color: #1e1e1e;
@@ -217,18 +267,43 @@ header .btn{
     color: #fac550;
     text-decoration: none;
 }
-.anime-grid .anime-item.light-mode{
-    background-color: white;
+
+.anime-grid.theme-sensitive .anime-item.light-mode {
+    background-color: #2e2833;
+    color: #dbdfff
 }
+
+.anime-grid.theme-sensitive .anime-item.dark-mode {
+    background-color: #1e1e1e;
+}
+
+.anime-grid.theme-sensitive .anime-item img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.anime-grid.theme-sensitive .anime-item p {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
 .a {
     color: #fac550;
     text-decoration: none
 }
+
+.a.theme-sensitive.light-mode {
+    color: #dbdfff;
+}
+
 .anime-grid .anime-item img {
     width: 100%;
     height: 500px;
     object-fit: cover;
 }
+
 .anime-grid .anime-item p {
     margin-top: 10px;
     font-size: 20px;
@@ -240,20 +315,23 @@ header .btn{
     box-shadow: 0 0 0 3px rgb(0, 0, 0);
     color: #fac550;
 }
+
 #toggleThemeButton {
     font-size: 15px;
     font-weight: bold;
     color: #fff;
 }
+
 #toggleThemeButton:hover {
-    color: #000; 
-    background-color: #ffffff; 
+    color: #000;
+    background-color: #ffffff;
 }
 
 .anime-grid {
     display: flex;
     flex-wrap: wrap;
 }
+
 .anime-item {
     text-align: center;
 }
@@ -262,6 +340,10 @@ header .btn{
     font-weight: bold;
     color: #ffffff;
     margin-left: 5px;
+}
+
+.rating.theme-sensitive.light-mode {
+    color: #f4f0f0;
 }
 
 #sort-options {
@@ -274,19 +356,116 @@ header .btn{
 
 .sort-option {
     cursor: pointer;
-    color: #B0B7FF; 
+    color: #B0B7FF;
     padding: 5px;
     text-decoration: none;
-    margin-bottom: 5px; 
+    margin-bottom: 5px;
+}
+
+.sort-option.theme-sensitive.light-mode {
+    color: #1e1e1e
 }
 
 .sort-option:hover {
-    color: #fac550; 
+    color: #fac550;
 }
 
 .sort-option.active {
-    color: #fac550; 
+    color: #fac550;
 }
 
+.sort-option.active.light-mode {
+    color: #85214e;
+}
 
+.sort-option:hover.light-mode {
+    color: #85214e;
+}
+
+@media (max-width: 768px) {
+
+    .anime-grid.theme-sensitive .anime-item {
+        flex: 1 1 100%; 
+        padding: 10px;
+        text-align: left;
+    }
+
+    .anime-grid.theme-sensitive .anime-item img {
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .spotlight p {
+        display: none;
+    }
+
+    .spotlight h1 br {
+        display: none;
+    }
+
+    .spotlight h1 {
+        font-size: 28px; 
+    }
+
+    .spotlight h2 {
+        font-size: 38px; 
+    }
+
+    .spotlight-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        padding-bottom: 20px; 
+    }
+
+    .spotlight .actions {
+        margin-top: auto; 
+        text-align: center;
+    }
+
+    .spotlight .actions .watch-now {
+        font-size: 18px; 
+        padding: 10px 20px; 
+        margin-right: 0;
+        position: relative;
+        bottom: 0;
+    }
+
+    #sort-options {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .sort-option {
+        font-size: 16px;
+        padding: 5px;
+    }
+    
+    #toggleThemeButton {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    header .logo {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    header a {
+        margin: 5px 0;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
 

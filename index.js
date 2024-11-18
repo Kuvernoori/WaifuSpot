@@ -1,4 +1,3 @@
-document.body.style.backgroundColor = "#121212";
 
 function updateTime() {
     const now = new Date();

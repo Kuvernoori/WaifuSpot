@@ -7,57 +7,56 @@
     <title>WaifuSpot</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="manga_styles.css">
 
 </head>
 
 <body>
 
-<header>
-    <nav class="navbar navbar-expand-lg bg-body-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="withlogout.html">WaifuSpot</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav" id="menu">
-                    <li class="nav-item">
-                        <a id="menu-item-1" class="nav-link" href="tierlist.html" tabindex="0">Popularity list</a>
-                    </li>
-                    <li class="nav-item">
-                        <a id="menu-item-2" class="nav-link" href="manga.html" tabindex="0">Manga</a>
-                    </li>
-                    <li class="nav-item">
-                        <a id="menu-item-3" class="nav-link" href="forum.html" tabindex="0">Forum</a>
-                    </li>
-                    <li class="nav-item">
-                        <a id="menu-item-4" class="nav-link" href="news.html" tabindex="0">News</a>
-                    </li>
-                    <li class="nav-item">
-                        <a id="menu-item-5" class="nav-link" href="aboutus.html" tabindex="0">About us</a>
-                    </li>
-                </ul>
+    <header class="theme-sensitive">
+        <nav class="navbar navbar-expand-lg bg-body-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand theme-sensitive" href="withlogout.html">WaifuSpot</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav theme-sensitive" id="menu">
+                        <li class="nav-item theme-sensitive">
+                            <a id="menu-item-1" class="nav-link theme-sensitive" href="tierlist.html" tabindex="0">Popularity list</a>
+                        </li>
+                        <li class="nav-item theme-sensitive">
+                            <a id="menu-item-2" class="nav-link theme-sensitive" href="manga.html" tabindex="0">Manga</a>
+                        </li>
+                        <li class="nav-item theme-sensitive">
+                            <a id="menu-item-3" class="nav-link theme-sensitive" href="forum.html" tabindex="0">Forum</a>
+                        </li>
+                        <li class="nav-item theme-sensitive">
+                            <a id="menu-item-4" class="nav-link theme-sensitive" href="news.html" tabindex="0">News</a>
+                        </li>
+                        <li class="nav-item theme-sensitive">
+                            <a id="menu-item-5" class="nav-link theme-sensitive" href="aboutus.html" tabindex="0">About us</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
+        </nav>
+        <button class="btn btn-outline-light" id="toggleThemeButton">Theme switcher</button>
+        <div class="user-options">
+            <div id="auth-buttons">
+                <a href="signup.html" class="btn btn-outline-light" id="signUpButton">Sign Up</a>
+                <a href="signin.html" class="btn btn-outline-light" id="logInButton">Log In</a>
+                </div>
         </div>
-    </nav>
-    </div>
-    </div>
-    <button class="btn btn-outline-light" id="toggleThemeButton">Theme switcher</button>
-    <div class="user-options">
-        <div id="auth-buttons">
-            <a href="signup.html" class="btn btn-outline-light" id="signUpButton">Sign Up</a>
-            <a href="signin.html" class="btn btn-outline-light" id="logInButton">Log In</a>
+        <div id="personal-account-button" style="display: block;">
+            <a href="user.html" class="btn btn-outline-light" id="personalAccountButton">Personal Account</a>
         </div>
-    </div>
-    <div id="logout-button" style="display: none;">
-        <a href="index.html" class="btn btn-outline-light" id="logOutButton">Log Out</a>
-    </div>
-    </div>
-</header>
-
+            <div id="logout-button" style="display: none;">
+                <a href="index.html" class="btn btn-outline-light" id="logOutButton">Log Out</a>
+            </div>
+           
+    </header>
 
 <div class="title text-center my-3">
     <h1>The most popular manga according to readers</h1>
@@ -66,11 +65,11 @@
 <div class="container">
     <div class="row">
         <div class="col-md-4 mb-1">
-            <div class="card">
-                <div class="number-circle mb-1">
-                    <span>1</span>
+            <div class="card theme-sensitive">
+                <div class="number-circle mb-1 theme-sensitive">
+                    <span class="theme-sensitive">1</span>
                 </div>
-                <h2 style="color: #fac550;">Attack on Titan</h2>
+                <h2 class="theme-sensitive">Attack on Titan</h2>
                 <img src="https://kuvernoori.github.io/Anime-site-test/aot-manga.jpg" alt="'Attack on Titan'"
                      class="card-img-top">
                 <p class="card-body">
@@ -78,32 +77,35 @@
                         Hundreds of years ago, terrifying monsters appeared that looked somewhat like humans...
                     </i>
                 </p>
+                <button class="btn btn-primary more-info-btn theme-sensitive" data-manga-name="Attack on Titan">More information</button>
+                <div class="extra-info text-light mt-3 theme-sensitive" style="display: none;">Additional information about Attack on Titan...</div>
             </div>
         </div>
 
         <div class="col-md-4 mb-1">
-            <div class="card">
-                <div class="number-circle mb-1">
-                    <span>2</span>
+            <div class="card theme-sensitive">
+                <div class="number-circle mb-1 theme-sensitive">
+                    <span class="theme-sensitive">2</span>
                 </div>
-                <h2 style="color: #fac550;">Tokyo Ghoul</h2>
+                <h2 class="theme-sensitive">Tokyo Ghoul</h2>
                 <img src="https://kuvernoori.github.io/Anime-site-test/tokyo.jpg" alt="Tokyo Ghoul"
                      class="card-img-top">
                 <p class="card-body">
                     <i style="color: white">
-                        In a world where the facets of humanity and eerie mystery are mixed, there is an ancient
-                        species...
+                        In a world where the facets of humanity and eerie mystery are mixed...
                     </i>
                 </p>
+                <button class="btn btn-primary more-info-btn theme-sensitive" data-manga-name="Tokyo Ghoul">More information</button>
+                <div class="extra-info text-light mt-3 theme-sensitive" style="display: none;">Additional information about Tokyo Ghoul...</div>
             </div>
         </div>
 
         <div class="col-md-4 mb-1">
-            <div class="card">
-                <div class="number-circle mb-1">
-                    <span>3</span>
+            <div class="card theme-sensitive">
+                <div class="number-circle mb-1 theme-sensitive">
+                    <span class="theme-sensitive">3</span>
                 </div>
-                <h2 style="color: #fac550;">Berserk</h2>
+                <h2 class="theme-sensitive">Berserk</h2>
                 <img src="https://kuvernoori.github.io/Anime-site-test/berserkmanga.jpg" alt="Berserk"
                      class="card-img-top">
                 <p class="card-body">
@@ -111,15 +113,17 @@
                         Guts was born from the hanged corpse of his mother and raised as a mercenary...
                     </i>
                 </p>
+                <button class="btn btn-primary more-info-btn theme-sensitive" data-manga-name="Berserk">More information</button>
+                <div class="extra-info text-light mt-3 theme-sensitive" style="display: none;">Additional information about Berserk...</div>
             </div>
         </div>
 
         <div class="col-md-4 mb-1">
-            <div class="card">
-                <div class="number-circle mb-1">
-                    <span>4</span>
+            <div class="card theme-sensitive">
+                <div class="number-circle mb-1 theme-sensitive">
+                    <span class="theme-sensitive">4</span>
                 </div>
-                <h2 style="color: #fac550;">Land of the Lustrous</h2>
+                <h2 class="theme-sensitive">Land of the Lustrous</h2>
                 <img src="https://kuvernoori.github.io/Anime-site-test/country.jpg" alt="Land of the Lustrous"
                      class="card-img-top">
                 <p class="card-body">
@@ -128,15 +132,17 @@
                         times...
                     </i>
                 </p>
+                <button class="btn btn-primary more-info-btn theme-sensitive" data-manga-name="Land of the Lustrous">More information</button>
+                <div class="extra-info text-light mt-3 theme-sensitive" style="display: none;">Additional information about Land of the Lustrous...</div>
             </div>
         </div>
 
         <div class="col-md-4 mb-1">
-            <div class="card">
-                <div class="number-circle mb-1">
-                    <span>5</span>
+            <div class="card theme-sensitive">
+                <div class="number-circle mb-1 theme-sensitive">
+                    <span class="theme-sensitive">5</span>
                 </div>
-                <h2 style="color: #fac550;">Naruto</h2>
+                <h2 class="theme-sensitive">Naruto</h2>
                 <img src="https://kuvernoori.github.io/Anime-site-test/naruto-manga.jpg" alt="Naruto"
                      class="card-img-top">
                 <p class="card-body">
@@ -144,31 +150,35 @@
                         On Naruto Uzumaki's birthday, the village of Konoha was attacked by a legendary demon...
                     </i>
                 </p>
+                <button class="btn btn-primary more-info-btn theme-sensitive" data-manga-name="Naruto">More information</button>
+                <div class="extra-info text-light mt-3 theme-sensitive" style="display: none;">Additional information about Naruto...</div>
             </div>
         </div>
 
         <div class="col-md-4 mb-1">
-            <div class="card">
-                <div class="number-circle mb-1">
-                    <span>6</span>
+            <div class="card theme-sensitive">
+                <div class="number-circle mb-1 theme-sensitive">
+                    <span class="theme-sensitive">6</span>
                 </div>
-                <h2 style="color: #fac550;">Monster</h2>
+                <h2 class="theme-sensitive">Monster</h2>
                 <img src="https://kuvernoori.github.io/Anime-site-test/monster-manga.jpg" alt="Monster"
                      class="card-img-top">
                 <p class="card-body">
                     <i style="color: white">
-                        Dr. Kenzo Tenma is a talented Japanese surgeon living in Europe with his beautiful fiancée...
+                        Dr. Kenzo Tenma is a talented Japanese surgeon living in Europe...
                     </i>
                 </p>
+                <button class="btn btn-primary more-info-btn theme-sensitive" data-manga-name="Monster">More information</button>
+                <div class="extra-info text-light mt-3 theme-sensitive" style="display: none;">Additional information about Monster...</div>
             </div>
         </div>
 
         <div class="col-md-4 mb-4">
-            <div class="card">
-                <div class="number-circle mb-1">
-                    <span>7</span>
+            <div class="card theme-sensitive">
+                <div class="number-circle mb-1 theme-sensitive">
+                    <span class="theme-sensitive">7</span>
                 </div>
-                <h2 style="color: #fac550;">The Horizon</h2>
+                <h2 class="theme-sensitive">The Horizon</h2>
                 <img src="https://kuvernoori.github.io/Anime-site-test/horizon-manga.jpg" alt="The Horizon"
                      class="card-img-top">
                 <p class="card-body">
@@ -176,15 +186,17 @@
                         Two children meet unexpectedly in the midst of war...
                     </i>
                 </p>
+                <button class="btn btn-primary more-info-btn theme-sensitive" data-manga-name="The Horizon">More information</button>
+                <div class="extra-info text-light mt-3 theme-sensitive" style="display: none;">Additional information about The Horizon...</div>
             </div>
         </div>
 
         <div class="col-md-4 mb-4">
-            <div class="card">
-                <div class="number-circle mb-1">
-                    <span>8</span>
+            <div class="card theme-sensitive">
+                <div class="number-circle mb-1 theme-sensitive">
+                    <span class="theme-sensitive">8</span>
                 </div>
-                <h2 style="color: #fac550;">Death Note</h2>
+                <h2 class="theme-sensitive">Death Note</h2>
                 <img src="https://kuvernoori.github.io/Anime-site-test/death-manga.jpg" alt="Death Note"
                      class="card-img-top">
                 <p class="card-body">
@@ -192,15 +204,17 @@
                         Light Yagami is a model 17-year-old high school student whose exam scores are at the top...
                     </i>
                 </p>
+                <button class="btn btn-primary more-info-btn theme-sensitive" data-manga-name="Death Note">More information</button>
+                <div class="extra-info text-light mt-3 theme-sensitive" style="display: none;">Additional information about Death Note...</div>
             </div>
         </div>
 
         <div class="col-md-4 mb-3">
-            <div class="card">
-                <div class="number-circle mb-1">
-                    <span>9</span>
+            <div class="card theme-sensitive">
+                <div class="number-circle mb-1 theme-sensitive">
+                    <span class="theme-sensitive">9</span>
                 </div>
-                <h2 style="color: #fac550;">Bungo Stray Dogs</h2>
+                <h2 class="theme-sensitive">Bungo Stray Dogs</h2>
                 <img src="https://media.kg-portal.ru/anime/b/bungostraydogsmovie/posters/bungostraydogsmovie_1.jpg"
                      alt="Bungo Stray Dogs" class="card-img-top">
                 <p class="card-body">
@@ -208,15 +222,18 @@
                         The story focuses on a young adult named Atsushi Nakajima.
                     </i>
                 </p>
+                <button class="btn btn-primary more-info-btn theme-sensitive" data-manga-name="Bungo Stray Dogs">More information</button>
+                <div class="extra-info text-light mt-3 theme-sensitive" style="display: none;">Additional information about Bungo Stray Dogs...</div>
             </div>
         </div>
     </div>
 </div>
 
-<footer class="text-left p-2 bg-dark text-white">
+<footer class="theme-sensitive">
     <p><i>Astana IT University || SE-2329</i></p>
     <p>Sanzhar Berkamalov | Arsen Tinalin | Altair Aitymov</p>
 </footer>
+<script src="API.js"></script>
 <script src="change.js"></script>
 <script src="loggeduser.js"></script>
 <script src="keyboard-navigation.js"></script>

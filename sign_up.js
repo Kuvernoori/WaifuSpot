@@ -1,3 +1,4 @@
+
 document.querySelector('.signup-form').addEventListener('submit', function (event) {
     const name = document.getElementById('name');
     const email = document.getElementById('email');

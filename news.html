@@ -10,58 +10,61 @@
 </head>
 <body>
 
-<header>
-    <nav class="navbar navbar-expand-lg bg-body-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="withlogout.html">WaifuSpot</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav" id="menu">
-                    <li class="nav-item">
-                        <a id="menu-item-1" class="nav-link" href="tierlist.html" tabindex="0">Popularity list</a>
-                    </li>
-                    <li class="nav-item">
-                        <a id="menu-item-2" class="nav-link" href="manga.html" tabindex="0">Manga</a>
-                    </li>
-                    <li class="nav-item">
-                        <a id="menu-item-3" class="nav-link" href="forum.html" tabindex="0">Forum</a>
-                    </li>
-                    <li class="nav-item">
-                        <a id="menu-item-4" class="nav-link" href="news.html" tabindex="0">News</a>
-                    </li>
-                    <li class="nav-item">
-                        <a id="menu-item-5" class="nav-link" href="aboutus.html" tabindex="0">About us</a>
-                    </li>
-                </ul>
+    <header class="theme-sensitive">
+        <nav class="navbar navbar-expand-lg bg-body-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand theme-sensitive" href="withlogout.html">WaifuSpot</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav theme-sensitive" id="menu">
+                        <li class="nav-item theme-sensitive">
+                            <a id="menu-item-1" class="nav-link theme-sensitive" href="tierlist.html" tabindex="0">Popularity list</a>
+                        </li>
+                        <li class="nav-item theme-sensitive">
+                            <a id="menu-item-2" class="nav-link theme-sensitive" href="manga.html" tabindex="0">Manga</a>
+                        </li>
+                        <li class="nav-item theme-sensitive">
+                            <a id="menu-item-3" class="nav-link theme-sensitive" href="forum.html" tabindex="0">Forum</a>
+                        </li>
+                        <li class="nav-item theme-sensitive">
+                            <a id="menu-item-4" class="nav-link theme-sensitive" href="news.html" tabindex="0">News</a>
+                        </li>
+                        <li class="nav-item theme-sensitive">
+                            <a id="menu-item-5" class="nav-link theme-sensitive" href="aboutus.html" tabindex="0">About us</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
+        </nav>
+        <button class="btn btn-outline-light" id="toggleThemeButton">Theme switcher</button>
+        <div class="user-options">
+            <div id="auth-buttons">
+                <a href="signup.html" class="btn btn-outline-light" id="signUpButton">Sign Up</a>
+                <a href="signin.html" class="btn btn-outline-light" id="logInButton">Log In</a>
+                </div>
         </div>
-    </nav>
-    <button class="btn btn-outline-light" id="toggleThemeButton">Theme switcher</button>
-    <div class="user-options">
-        <div id="auth-buttons">
-            <a href="signup.html" class="btn btn-outline-light" id="signUpButton">Sign Up</a>
-            <a href="signin.html" class="btn btn-outline-light" id="logInButton">Log In</a>
+        <div id="personal-account-button" style="display: block;">
+            <a href="user.html" class="btn btn-outline-light" id="personalAccountButton">Personal Account</a>
+        </div>
+            <div id="logout-button" style="display: none;">
+                <a href="index.html" class="btn btn-outline-light" id="logOutButton">Log Out</a>
             </div>
-    </div>
-        <div id="logout-button" style="display: none;">
-            <a href="index.html" class="btn btn-outline-light" id="logOutButton">Log Out</a>
-        </div>
-    </div>
-</header>
+           
+    </header>
 
 <div class="main-content">
     <section class="news-list">
         <h2 class="section-title">Latest News</h2>
 
-        <article class="news-item">
+        <article class="news-item theme-sensitive">
             <div class="news-content">
                 <img src="https://kuvernoori.github.io/Anime-site-test/image1.jpg" alt="Spy x Family Manga"
                      class="news-image">
                 <div class="news-text">
-                    <h3>The manga "Family of a Spy" has sold over 36 million copies.</h3>
+                    <h3 class="theme-sensitive">The manga "Family of a Spy" has sold over 36 million copies.</h3>
                     <p>The total circulation of the Spy x Family manga has exceeded 36 million copies. This number may
                         include digital song sales. New circulation marks appeared following the release of Family of a
                         Spy volume 14 on September 4th.</p>
@@ -70,12 +73,13 @@
             </div>
         </article>
 
-        <article class="news-item">
-            <div class="news-content">
+        <article class="news-item theme-sensitive">
+            <div class="news-content theme-sensitive">
                 <img src="https://kuvernoori.github.io/Anime-site-test/image2.jpg" alt="Spiral Anime"
                      class="news-image">
                 <div class="news-text">
-                    <h3>'Spiral' Miniseries Trailer Promises Scary Anime Adaptation of Junji Ito's Manga</h3>
+                    <h3 class="theme-sensitive">'Spiral' Miniseries Trailer Promises Scary Anime Adaptation of Junji
+                        Ito's Manga</h3>
                     <p>The film adaptation is scheduled to premiere on September 28 on the Adult Swim block on Cartoon
                         Network and the next day on the Max streaming service. The series is scheduled to have four
                         episodes.</p>
@@ -84,12 +88,13 @@
             </div>
         </article>
 
-        <article class="news-item">
-            <div class="news-content">
+        <article class="news-item theme-sensitive">
+            <div class="news-content theme-sensitive">
                 <img src="https://kuvernoori.github.io/Anime-site-test/image3.jpg" alt="Fantasy Anime"
                      class="news-image">
                 <div class="news-text">
-                    <h3>A TV spot for the fantasy anime “Farewell to the Life of a Dragon” has been published. Hello,
+                    <h3 class="theme-sensitive">A TV spot for the fantasy anime “Farewell to the Life of a Dragon” has
+                        been published. Hello,
                         human life"</h3>
                     <p>A TV spot has been released for the anime based on the light novel “Farewell to the Life of the
                         Dragon. Hello, human life" (Sayonara Ryūsei, Konnichiwa Jinsei).</p>
@@ -98,12 +103,13 @@
             </div>
         </article>
 
-        <article class="news-item">
+        <article class="news-item theme-sensitive">
             <div class="news-content">
                 <img src="https://kuvernoori.github.io/Anime-site-test/image4.jpg" alt="My Hero Academia"
                      class="news-image">
                 <div class="news-text">
-                    <h3>The box office of the anime “My Hero Academia: You're Next” approaches 3 billion yen.</h3>
+                    <h3 class="theme-sensitive">The box office of the anime “My Hero Academia: You're Next” approaches 3
+                        billion yen.</h3>
                     <p>The box office gross of the fourth anime film in the My Hero Academia franchise in Japan
                         approached 3 billion yen.</p>
                     <a href="#" class="read-more">Read more</a>
@@ -111,11 +117,12 @@
             </div>
         </article>
 
-        <article class="news-item">
+        <article class="news-item theme-sensitive">
             <div class="news-content">
                 <img src="https://kuvernoori.github.io/Anime-site-test/image5.jpg" alt="Re:Zero" class="news-image">
                 <div class="news-text">
-                    <h3>The continuation of the anime “Re:Zero - life from scratch in another world” has a second
+                    <h3 class="theme-sensitive">The continuation of the anime “Re:Zero - life from scratch in another
+                        world” has a second
                         trailer with an ending song</h3>
                     <p>YouTube channel KADOKAWAanime presented the second trailer for the third season of the anime
                         based on the light novel “Re:Zero - life from scratch in another world” (Re: Zero Kara Hajimeru
@@ -129,7 +136,7 @@
 </div>
 
 
-<footer>
+<footer class="theme-sensitive">
 
     <p><i>Astana IT University || SE-2329</i></p>
     <p>Sanzhar Berkamalov | Arsen Tinalin | Altair Aitymov</p>
